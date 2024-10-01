@@ -1,0 +1,278 @@
+*{
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+
+body{
+  margin: 0px;;
+  display: flex;
+  min-height: 100vh;
+}
+
+#profile-big-icon{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.notif-button{
+  background-image: url(./Media/bell-ring-outline.svg);
+  width: 30px
+  background-size: cover;
+  border:none;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding:15px;
+} 
+
+
+#profile-small-icon{
+  width: 50px;
+  border-radius: 50px;
+}
+
+
+.aside{
+  background-color:#0C1844;
+  width: 15%;
+  color:white;
+  display: flex;
+  flex-direction: column;
+}
+
+.dash{
+  display:flex;
+  color:white;
+  font-size: 2rem;
+  padding-top: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;;
+  padding-bottom: 20px;
+}
+
+.aside-grid{
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  
+}
+
+.sidebar-icon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+  padding :10px 10px 10px 20px;
+  
+}
+
+
+.sidebar-icon > a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 500;
+}
+
+
+.sidebar-icon > img {
+  height:27px;
+  width: 30px;
+  filter: invert(100%);
+}
+
+
+
+.header{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows:40% 60%;
+  background-color: white;
+  padding-bottom : 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  position: relative;
+  z-index: 1;
+}
+
+.header-item, .first{
+  display: flex;
+  gap:30px;
+}
+
+.searchbar {
+  width: 70%;
+  height: 50%;
+  border-radius: 20px;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #babec060;
+  font-size: 1.2rem;
+  }
+
+.searchbar:focus-visible{
+  outline : 1px solid #45474B;
+}  
+
+
+.header-text{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+
+.header-item{
+  display: flex;
+  padding-right: 100px;
+  padding-left:100px;
+}
+
+.first, .third, .second, .nav-buttons{
+  align-items: center;
+}
+
+.first{
+  justify-content: center;
+}
+
+
+.third{
+  justify-content: flex-start;
+}
+
+.second, .nav-buttons{
+  justify-content: flex-end;
+}
+
+.second > h3{
+  font-size:1.3rem;
+  font-weight: 400;
+}
+
+.nav-buttons{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.nav-buttons > button:hover {
+  background-color: #0c184494;
+}
+
+.nav-buttons > button{
+  background-color:#0C1844;
+  color:white;
+  font-size: 1rem;
+  padding:15px 25px;
+  border: white;
+  border-radius: 10px;
+  font-weight: 400;
+}
+
+main{
+  display : flex;
+  flex-direction: column;
+  width: 85%;
+  overflow: hidden; 
+  background-color: #fff5e156;
+  color:#45474B;
+}
+
+.main-contents{
+  display: flex;
+  gap:30px;
+  padding-left:40px;
+  padding-right:40px;
+}
+
+
+.main-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows:repeat(3, 1fr);
+  gap:30px
+}
+
+
+.card{
+  border-left: solid 10px #F4CE14;
+  display: grid;
+  grid-template-rows : 1fr 2fr 1fr;
+  background-color: white;
+  border-radius:10px;
+  padding : 20px 30px 20px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  min-width: 500px;
+}
+
+.card-buttons{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-favorite-button,
+.card-watch-button,
+.card-share-button {
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color: transparent;
+    filter: invert(30%);
+}
+
+.your-project{
+
+}
+
+
+
+.side-section{
+  display: grid;
+  grid-template-rows:repeat(2, 1fr)
+}
+
+
+.announcement-grid{
+  background-color: white;
+  border-radius:10px;
+  padding:30px;
+  max-height: 500px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  border-left: solid 10px #FF6969;
+  overflow: scroll;
+}
+
+.trending-grid{
+  display: grid;
+  border-radius:10px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: white;
+  padding:20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  border-left: solid 10px #118afc6b;
+}
+
+
+h3{
+  font-size: 1.5rem;
+}
+
+.trending-icons{
+  width: 70px;
+  height: 70px;
+}
+
+li{
+  list-style-type: none;
+}
+
+
+
