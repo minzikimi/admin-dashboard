@@ -3,11 +3,12 @@
   box-sizing: border-box;
 }
 
-
-
+:root{
+  --clr-main:#0C1844;
+}
 
 body{
-  margin: 0px;;
+  margin: 0px;
   display: flex;
   min-height: 100vh;
 }
@@ -20,7 +21,7 @@ body{
 
 .notif-button{
   background-image: url(./Media/bell-ring-outline.svg);
-  width: 30px
+  width: 30px;
   background-size: cover;
   border:none;
   background-repeat: no-repeat;
@@ -28,15 +29,13 @@ body{
   padding:15px;
 } 
 
-
 #profile-small-icon{
   width: 50px;
   border-radius: 50px;
 }
 
-
 .aside{
-  background-color:#0C1844;
+  background-color:var(--clr-main);
   width: 15%;
   color:white;
   display: flex;
@@ -52,14 +51,13 @@ body{
   text-decoration: none;
   align-items: center;
   justify-content: center;;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .aside-grid{
   display: grid;
   grid-template-rows: 1fr;
-  gap: 10px;
-  
+  gap: 20px;
 }
 
 .sidebar-icon{
@@ -71,7 +69,6 @@ body{
   
 }
 
-
 .sidebar-icon > a{
   text-decoration: none;
   font-size: 1.4rem;
@@ -79,14 +76,11 @@ body{
   font-weight: 500;
 }
 
-
 .sidebar-icon > img {
   height:27px;
   width: 30px;
   filter: invert(100%);
 }
-
-
 
 .header{
   display: grid;
@@ -119,13 +113,11 @@ body{
   outline : 1px solid #45474B;
 }  
 
-
 .header-text{
   display: flex;
   flex-direction: column;
   gap:20px;
 }
-
 
 .header-item{
   display: flex;
@@ -140,7 +132,6 @@ body{
 .first{
   justify-content: center;
 }
-
 
 .third{
   justify-content: flex-start;
@@ -157,7 +148,7 @@ body{
 
 .nav-buttons{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: nowrap;
 }
 
@@ -166,7 +157,7 @@ body{
 }
 
 .nav-buttons > button{
-  background-color:#0C1844;
+  background-color:var(--clr-main);
   color:white;
   font-size: 1rem;
   padding:15px 25px;
@@ -191,14 +182,12 @@ main{
   padding-right:40px;
 }
 
-
 .main-grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows:repeat(3, 1fr);
   gap:30px
 }
-
 
 .card{
   border-left: solid 10px #F4CE14;
@@ -219,29 +208,22 @@ main{
 .card-favorite-button,
 .card-watch-button,
 .card-share-button {
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     border: none;
     background-color: transparent;
     filter: invert(30%);
 }
-
-.your-project{
-
-}
-
-
 
 .side-section{
   display: grid;
   grid-template-rows:repeat(2, 1fr)
 }
 
-
 .announcement-grid{
   background-color: white;
   border-radius:10px;
-  padding:30px;
+  padding:20px;
   max-height: 500px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -255,19 +237,39 @@ main{
   border-radius:10px;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   background-color: white;
-  padding:20px;
+  padding:10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
   border-left: solid 10px #118afc6b;
 }
 
+.trending-item{
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.trending-desc{
+  display: flex;
+  flex-direction: column;
+}
+
+.trending-desc h4 {
+  margin-bottom: 0; 
+  font-weight: bold;
+}
+
+.trending-desc p {
+  margin-top: 2px; 
+  margin-bottom: 0;
+}
 
 h3{
   font-size: 1.5rem;
 }
 
 .trending-icons{
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
 }
 
 li{
